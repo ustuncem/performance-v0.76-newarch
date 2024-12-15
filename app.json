@@ -3,7 +3,9 @@
   "scheme": "buume",
   "icon": "./src/assets/splash/icon.png",
   "plugins": [
-    ["./withCustomIQKeyboardManager"],
+    [
+      "./withCustomIQKeyboardManager"
+    ],
     "expo-router",
     [
       "expo-image-picker",
@@ -44,8 +46,6 @@
         }
       }
     ],
-    "@react-native-firebase/app",
-    "@react-native-firebase/messaging",
     [
       "expo-build-properties",
       {
@@ -53,7 +53,9 @@
           "useFrameworks": "static"
         },
         "android": {
-          "extraMavenRepos": ["../../node_modules/@notifee/react-native/android/libs"]
+          "extraMavenRepos": [
+            "../../node_modules/@notifee/react-native/android/libs"
+          ]
         }
       }
     ]
@@ -65,11 +67,9 @@
       "foregroundImage": "./src/assets/splash/adaptive-icon.png",
       "backgroundColor": "#FFFFFF"
     },
-    "googleServicesFile": "./google-services.json"
   },
   "ios": {
     "bundleIdentifier": "com.sgc.buume",
-    "googleServicesFile": "./GoogleService-Info.plist",
     "entitlements": {
       "aps-environment": "production"
     }
